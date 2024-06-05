@@ -12,12 +12,19 @@ function App() {
       <h1>React Counter</h1>
       <button
         onClick={() => {
-          counter= useState(0)
+        counter=0
         }}
       >
     Reset
       </button>
       <Counter counter={counter} setCounter={setCounter} />
+      <button
+          onClick={() => {
+            setCounter(counter + 1); // counter = counter+1
+          }}
+        >
+          +
+        </button>
 
       <div>
         <p >{counter}</p>
